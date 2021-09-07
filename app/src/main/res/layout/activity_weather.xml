@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/grey"
+    tools:context=".Weather">
+
+    <ImageView
+        android:id="@+id/background"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:adjustViewBounds="true"
+        android:scaleType="centerCrop"
+
+        ></ImageView>
+
+    <TextView
+        android:id="@+id/logo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100px"
+        android:fontFamily="@font/font"
+        android:background = "@color/lightGrey"
+        android:text="@string/Log_app"
+        android:textAlignment="center"
+        android:textColor="@color/darkGrey"
+        android:textSize="30sp" />
+
+
+
+    <EditText
+        android:id="@+id/user_field"
+        android:layout_width="250sp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/logo"
+        android:layout_marginStart="75sp"
+        android:layout_marginTop="8dp"
+        android:background="@color/lightGrey"
+        android:ems="50"
+        android:fontFamily="@font/font"
+        android:hint="@string/city"
+        android:textAlignment="center"
+        android:textColorHint="@color/darkGrey"
+
+
+
+        />
+
+
+
+    <LinearLayout
+        android:id="@+id/btn_layout"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true">
+
+        <Button
+            android:id="@+id/Main_btn"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:fontFamily="@font/font"
+            android:backgroundTint="@color/lightGrey"
+            android:textColor="@color/darkGrey"
+            android:text="@string/search" />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/Exit"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:backgroundTint="@color/lightGrey"
+        android:fontFamily="@font/font"
+        android:hint="@string/exit"
+        android:textColor="@color/darkGrey" />
+
+    <TextView
+        android:id="@+id/ResultWeather"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/user_field"
+        android:layout_marginBottom="0dp"
+        android:fontFamily="@font/font"
+        android:textAlignment="center"
+        android:textColor="@color/darkGrey"
+        android:textSize="30sp" />
+
+
+    <TextView
+        android:id="@+id/ResultTemp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/btn_layout"
+        android:layout_marginBottom="10dp"
+        android:background="@color/lightGrey"
+        android:fontFamily="@font/font"
+        android:textAlignment="center"
+        android:textColor="@color/darkGrey"
+        android:textSize="30sp" />
+
+
+</RelativeLayout>

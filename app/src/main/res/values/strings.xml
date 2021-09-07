@@ -1,0 +1,33 @@
+<resources>
+    <string name="Log_app">Weather</string>
+    <string name="city">Укажите город</string>
+
+    <string name="search">Найти</string>
+    <string name="exit">Выйти</string>
+
+
+    <string name="app_name">AuthTast</string>
+    <string name="Title">Auth test</string>
+
+    <string name="EtName">Введите Имя</string>
+    <string name="EtEmail">Введите Email</string>
+    <string name="EtPassword">Введите Пароль</string>
+
+    <string name="TitleAuth">Аутентификация</string>
+    <string name="TitleReg">Reg test</string>
+
+    <string name="Home">На главную</string>
+    <string name="Reg">Зарегестрироаться</string>
+    <string name="Auth">Авторизация</string>
+
+    <string name="Name">Введите Имя</string>
+    <string name="Back">Назад</string>
+
+    <string name="Logo_App">Погода в городе</string>
+    <string name="Your_City">Укажите город</string>
+    <string name="Return">Найти</string>
+    <string name="Wait">Получение данных</string>
+    <string name="Error">Города не существует или указан некорректно</string>
+    <string name="Login">Войти</string>
+
+</resources>
