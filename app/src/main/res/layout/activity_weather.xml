@@ -20,14 +20,13 @@
         android:id="@+id/logo"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="100px"
+        android:layout_marginTop="150px"
+        android:background="@color/lightGrey"
         android:fontFamily="@font/font"
-        android:background = "@color/lightGrey"
         android:text="@string/Log_app"
         android:textAlignment="center"
         android:textColor="@color/darkGrey"
         android:textSize="30sp" />
-
 
 
     <EditText
@@ -36,14 +35,13 @@
         android:layout_height="wrap_content"
         android:layout_below="@+id/logo"
         android:layout_marginStart="75sp"
-        android:layout_marginTop="8dp"
+        android:layout_marginTop="20dp"
         android:background="@color/lightGrey"
         android:ems="50"
         android:fontFamily="@font/font"
         android:hint="@string/city"
         android:textAlignment="center"
         android:textColorHint="@color/darkGrey"
-
 
 
         />
@@ -83,8 +81,9 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@id/user_field"
-        android:layout_marginBottom="0dp"
+        android:layout_marginTop="20dp"
         android:fontFamily="@font/font"
+        android:background="@color/lightGrey"
         android:textAlignment="center"
         android:textColor="@color/darkGrey"
         android:textSize="30sp" />

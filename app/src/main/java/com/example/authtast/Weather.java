@@ -32,7 +32,6 @@ public class Weather extends AppCompatActivity {
     private Button Main_btn;
     private TextView ResultTemp;
     private TextView ResultWeather;
-    private TextView ResultPhoto;
     private Button Login_btn;
     private ImageView background;
 
@@ -177,8 +176,30 @@ public class Weather extends AppCompatActivity {
                     Photo = object.getJSONArray("weather").getJSONObject(0).getString("description");
                     String con = "ясно";
                     if (Photo.equals("ясно")) {
-                        background.setImageResource(R.drawable.yasno);
-                    } else {
+                        background.setImageResource(R.drawable.clear);
+                    }
+                    else if (Photo.equals("пасмурно")) {
+                        background.setImageResource(R.drawable.dull);
+                    }
+                    else if (Photo.equals("дождь")) {
+                        background.setImageResource(R.drawable.rain);
+                    }
+                    else if (Photo.equals("небольшой дождь")) {
+                        background.setImageResource(R.drawable.litle_rain);
+                    }
+                    else if (Photo.equals("небольшая облачность")) {
+                        background.setImageResource(R.drawable.little_chip);
+                    }
+                    else if (Photo.equals("переменная облачность")) {
+                        background.setImageResource(R.drawable.switch_chip);
+                    }
+                    else if (Photo.equals("облачно с прояснениями")) {
+                        background.setImageResource(R.drawable.chip_with_clear);
+                    }
+                    else if (Photo.equals("мгла")) {
+                        background.setImageResource(R.drawable.mist);
+                    }
+                    else {
                         background.setImageResource(R.drawable.eastregg);
                     }
 
