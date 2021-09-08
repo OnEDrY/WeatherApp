@@ -26,7 +26,7 @@ import java.net.HttpURLConnection;
 import java.net.MalformedURLException;
 import java.net.URL;
 
-public class Weather extends AppCompatActivity {
+public class Weather extends AppCompatActivity implements View.OnClickListener{
 
     private EditText User_field;
     private Button Main_btn;
@@ -34,6 +34,7 @@ public class Weather extends AppCompatActivity {
     private TextView ResultWeather;
     private Button Login_btn;
     private ImageView background;
+    private Button profile;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -46,13 +47,20 @@ public class Weather extends AppCompatActivity {
         ResultWeather = findViewById(R.id.ResultWeather);
         Login_btn = findViewById(R.id.Exit);
         background = findViewById(R.id.background);
+        profile = findViewById(R.id.profile);
 
 
 
-        Main_btn.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
+        Main_btn.setOnClickListener(this);
+        Login_btn.setOnClickListener(this);
+        profile.setOnClickListener(this);
 
+    }
+
+    @Override
+    public void onClick(View view) {
+        switch (view.getId()){
+            case R.id.Main_btn:
                 ContentValues  contentValues = new ContentValues();
 
                 if (User_field.getText().toString().trim().equals("")) {
@@ -65,25 +73,15 @@ public class Weather extends AppCompatActivity {
 
                     new GetURLDate().execute(url);
                 }
-
-            }
-        });
-
-        Login_btn.setOnClickListener(
-                new View.OnClickListener() {
-                    @Override
-                    public void onClick(View v) {
-                        switch (v.getId()){
-                            case R.id.Exit:
-                                startActivity(new Intent(Weather.this,MainActivity.class));
-                                break;
-                        }
-
-                    }
-                }
-        );
+                break;
+            case R.id.Exit:
+                startActivity(new Intent(Weather.this,MainActivity.class));
+                break;
+            case R.id.profile:
+                startActivity(new Intent(Weather.this, ProfileActivity.class));
+                break;
+        }
     }
-
 
 
     private class GetURLDate extends AsyncTask<String, String, String>{

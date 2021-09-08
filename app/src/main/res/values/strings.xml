@@ -30,4 +30,6 @@
     <string name="Error">Города не существует или указан некорректно</string>
     <string name="Login">Войти</string>
 
+    <string name="profile">Профиль</string>
+
 </resources>

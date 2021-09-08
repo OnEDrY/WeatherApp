@@ -10,6 +10,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.AuthTast">
         <activity
+            android:name=".ProfileActivity"
+            android:exported="true" />
+        <activity
             android:name=".Weather"
             android:exported="true" />
         <activity

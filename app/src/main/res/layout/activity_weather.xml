@@ -71,9 +71,20 @@
         android:id="@+id/Exit"
         android:layout_width="100dp"
         android:layout_height="40dp"
+        android:layout_marginStart="15dp"
         android:backgroundTint="@color/lightGrey"
         android:fontFamily="@font/font"
         android:hint="@string/exit"
+        android:textColor="@color/darkGrey" />
+
+    <Button
+        android:id="@+id/profile"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="300dp"
+        android:backgroundTint="@color/lightGrey"
+        android:fontFamily="@font/font"
+        android:hint="@string/profile"
         android:textColor="@color/darkGrey" />
 
     <TextView
